@@ -1,0 +1,50 @@
+.root {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  max-width: 300px;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 800px) {
+  .root {
+    max-width: 1000px;
+  }
+}
+.storeCardImageCont {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  min-width: 0;
+}
+.img {
+  object-fit: contain;
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+.storeCardStoreNameCont {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding-left: 10px;
+  border: 1px solid rgb(229, 229, 229);
+}
+@media (min-width: 0px) and (max-width: 800px) {
+  .storeCardStoreNameCont {
+    border-radius: 0px;
+    border-width: 0px;
+  }
+}
+.storeCardTagsCont {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}

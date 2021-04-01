@@ -1,0 +1,38 @@
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.box__qjPoV {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.box___9BNcP {
+  position: relative;
+  width: auto;
+  height: 100%;
+  left: auto;
+  top: auto;
+  font-size: 46px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  display: inline-block;
+  min-height: 0;
+}
+.box__gxMtJ {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.box__jrkDi {
+  position: relative;
+  left: auto;
+  top: auto;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}

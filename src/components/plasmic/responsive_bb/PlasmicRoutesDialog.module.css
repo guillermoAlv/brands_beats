@@ -1,0 +1,24 @@
+.root {
+  display: flex;
+  width: 200px;
+  height: auto;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 10px;
+  padding: 10px;
+  background: rgb(0, 0, 0);
+}
+.dialogClickableText__wdXj:global(.__wab_instance) {
+  position: relative;
+}
+.dialogClickableText__iyIIz:global(.__wab_instance) {
+  position: relative;
+}
+.dialogClickableText__ffAkY:global(.__wab_instance) {
+  position: relative;
+}
+.contact:global(.__wab_instance) {
+  position: relative;
+}

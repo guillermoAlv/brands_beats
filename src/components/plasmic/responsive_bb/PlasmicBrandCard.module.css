@@ -1,0 +1,91 @@
+.root {
+  display: flex;
+  width: 290px;
+  height: auto;
+  position: relative;
+  flex-direction: column;
+}
+@media (min-width: 0px) and (max-width: 800px) {
+  .root {
+    width: 100%;
+    height: 213px;
+    min-width: 0;
+  }
+}
+.box__h2XTk {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: auto;
+  top: auto;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+.box__pxJVv {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  background: rgb(255, 255, 255);
+}
+.brandCardImage {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 156px;
+  left: auto;
+  top: auto;
+  min-width: 0;
+  background: rgba(68, 192, 255, 0.2);
+}
+.box__dV8TP {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  min-width: 0;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: rgb(29, 178, 189);
+}
+.box__anelK {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: auto;
+  top: auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  right: auto;
+  padding-left: 20px;
+  min-width: 0;
+  min-height: 0;
+  background: rgba(68, 192, 255, 0.2);
+}
+.brandCardName {
+  position: relative;
+  width: auto;
+  height: auto;
+  left: auto;
+  top: auto;
+  font-family: "Muli";
+  font-weight: 700;
+  font-size: 18px;
+  display: inline-block;
+}
+.brandCardCategory {
+  position: relative;
+  width: auto;
+  height: auto;
+  left: auto;
+  top: auto;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}

@@ -1,0 +1,15 @@
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.box {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 80px;
+  text-align: center;
+  display: inline-block;
+}
