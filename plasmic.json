@@ -477,6 +477,32 @@
           "cssFilePath": "plasmic/brands_beats/PlasmicContentAboutus.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "RmR6Z9n4oC",
+          "name": "Tectcomp",
+          "type": "managed",
+          "projectId": "tDcLAAzBYxMBQFp3GHSHfW",
+          "renderModuleFilePath": "plasmic/brands_beats/PlasmicTectcomp.tsx",
+          "importSpec": {
+            "modulePath": "Tectcomp.tsx"
+          },
+          "cssFilePath": "plasmic/brands_beats/PlasmicTectcomp.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "5FtszvpDSt",
+          "name": "Pretest",
+          "type": "managed",
+          "projectId": "tDcLAAzBYxMBQFp3GHSHfW",
+          "renderModuleFilePath": "plasmic/brands_beats/PlasmicPretest.tsx",
+          "importSpec": {
+            "modulePath": "Pretest.tsx"
+          },
+          "cssFilePath": "plasmic/brands_beats/PlasmicPretest.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -493,7 +519,7 @@
           "filePath": "plasmic/brands_beats/images/clarkVanDerBekenTk0B3Dfkf4Unsplashjpg.jpeg"
         }
       ],
-      "jsBundleThemes": []
+      "projectApiToken": "6W0Ov8ByGLDFcODMQdsFmVTGL9uDZUio3WPsYT2XE9OoFDXUZnBQiKdylKYvHjz4Chx3BPsQxWF9ljWvNA"
     }
   ],
   "globalVariants": {
@@ -512,6 +538,6 @@
       }
     ]
   },
-  "cliVersion": "0.1.114",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.114/dist/plasmic.schema.json"
+  "cliVersion": "0.1.130",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.130/dist/plasmic.schema.json"
 }

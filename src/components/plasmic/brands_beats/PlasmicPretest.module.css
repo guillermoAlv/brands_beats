@@ -1,0 +1,11 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 260px;
+  height: 199px;
+}
+.img {
+  position: relative;
+  object-fit: cover;
+}

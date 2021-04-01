@@ -34,7 +34,7 @@ function HeaderSearchBar(props: HeaderSearchBarProps) {
   const [focus, setFocus ] = React.useState(false)
   const componentRef = React.useRef<any>(null);
   const node = React.useRef<any>();
-
+  console.log(status)
   React.useEffect(() => {
     function handleClick(e:  MouseEvent): void{
       if (componentRef.current){
@@ -54,7 +54,7 @@ function HeaderSearchBar(props: HeaderSearchBarProps) {
   function Tt({ hits, currentRefinement, refine }:any){
     if(currentRefinement !== ''){
       return (
-        <ul ref={componentRef} onClick={(e)=> console.log(e)}style={{zIndex:2, top: "40px", position: "absolute"}}>
+        <ul ref={componentRef} onClick={(e)=> console.log(e)}style={{zIndex:2, display:"block", top: "50px", position: "absolute", backgroundColor: "white", width: "80%", marginTop: "0px"}}>
           {hits.slice(0,5).map((hit: any) => (
               <li onClick={()=>togglePlayPause(hit.tags[0])} key={hit.objectID}>{hit.tags[0]}</li>
           ))}

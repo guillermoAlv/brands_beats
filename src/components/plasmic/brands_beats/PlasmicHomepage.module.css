@@ -163,8 +163,8 @@
   display: flex;
   position: relative;
   flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-grow: 2;
 }
 .footer___6YfxI {
