@@ -71,8 +71,7 @@ function HeaderSearchBar(props: HeaderSearchBarProps) {
   const SearchBox = ({ currentRefinement, isSearchStalled, refine }:any) => (
     <PlasmicHeaderSearchBar
     
-    textbox={{ ref:node, autoFocus:focus, onFocus:(e) => {if (componentRef.current) componentRef.current.style.visibility = "visible"}, type: "search", value: currentRefinement, onChange: event => refine(event.currentTarget.value)}}
-      {...props} />
+    />
   );
   const CustomSearchBox = connectSearchBox(SearchBox);
 
