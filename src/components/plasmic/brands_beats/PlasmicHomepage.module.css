@@ -35,7 +35,7 @@
   flex-grow: 2;
   padding: 5px;
 }
-.headerSearchBar__ew6R7:global(.__wab_instance) {
+.headerSearchBar:global(.__wab_instance) {
   position: relative;
 }
 .headerButtonAreaBig {
@@ -155,9 +155,6 @@
   flex-direction: row;
   align-items: stretch;
   justify-content: flex-start;
-}
-.headerSearchBar__b1Cz:global(.__wab_instance) {
-  position: relative;
 }
 .searchResults {
   display: flex;

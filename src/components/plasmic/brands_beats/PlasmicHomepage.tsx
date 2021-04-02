@@ -63,6 +63,7 @@ export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   header?: p.Flex<"header">;
   logoText?: p.Flex<typeof LogoText>;
+  headerSearchBar?: p.Flex<typeof HeaderSearchBar>;
   headerButtonAreaBig?: p.Flex<"div">;
   headerButtonAreaMobile?: p.Flex<"div">;
   headerMenuButton?: p.Flex<typeof HeaderMenuButton>;
@@ -117,10 +118,9 @@ function PlasmicHomepage__RenderFunc(props: {
 
               <div className={classNames(defaultcss.all, sty.box__p9Jof)}>
                 <HeaderSearchBar
-                  className={classNames(
-                    "__wab_instance",
-                    sty.headerSearchBar__ew6R7
-                  )}
+                  data-plasmic-name={"headerSearchBar"}
+                  data-plasmic-override={overrides.headerSearchBar}
+                  className={classNames("__wab_instance", sty.headerSearchBar)}
                 />
               </div>
 
@@ -281,14 +281,9 @@ function PlasmicHomepage__RenderFunc(props: {
                     ? true
                     : false
                 ) ? (
-                  <div className={classNames(defaultcss.all, sty.box___677Hf)}>
-                    <HeaderSearchBar
-                      className={classNames(
-                        "__wab_instance",
-                        sty.headerSearchBar__b1Cz
-                      )}
-                    />
-                  </div>
+                  <div
+                    className={classNames(defaultcss.all, sty.box___677Hf)}
+                  />
                 ) : null}
               </div>
             </div>
@@ -321,6 +316,7 @@ const PlasmicDescendants = {
     "root",
     "header",
     "logoText",
+    "headerSearchBar",
     "headerButtonAreaBig",
     "headerButtonAreaMobile",
     "headerMenuButton",
@@ -330,11 +326,13 @@ const PlasmicDescendants = {
   header: [
     "header",
     "logoText",
+    "headerSearchBar",
     "headerButtonAreaBig",
     "headerButtonAreaMobile",
     "headerMenuButton"
   ],
   logoText: ["logoText"],
+  headerSearchBar: ["headerSearchBar"],
   headerButtonAreaBig: ["headerButtonAreaBig"],
   headerButtonAreaMobile: ["headerButtonAreaMobile", "headerMenuButton"],
   headerMenuButton: ["headerMenuButton"],
@@ -349,6 +347,7 @@ type NodeDefaultElementType = {
   root: "div";
   header: "header";
   logoText: typeof LogoText;
+  headerSearchBar: typeof HeaderSearchBar;
   headerButtonAreaBig: "div";
   headerButtonAreaMobile: "div";
   headerMenuButton: typeof HeaderMenuButton;
@@ -413,6 +412,7 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     logoText: makeNodeComponent("logoText"),
+    headerSearchBar: makeNodeComponent("headerSearchBar"),
     headerButtonAreaBig: makeNodeComponent("headerButtonAreaBig"),
     headerButtonAreaMobile: makeNodeComponent("headerButtonAreaMobile"),
     headerMenuButton: makeNodeComponent("headerMenuButton"),

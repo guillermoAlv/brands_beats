@@ -6,8 +6,8 @@ import {
   DefaultHeaderSearchBarProps
 } from "./plasmic/brands_beats/PlasmicHeaderSearchBar";
 import algoliasearch from 'algoliasearch';
-import {InstantSearch, connectSearchBox, connectAutoComplete} from 'react-instantsearch-dom';
-import SearchContext from './SearchContext'
+import {InstantSearch, connectSearchBox} from 'react-instantsearch-dom';
+//import SearchContext from './SearchContext'
 
 const searchClient = algoliasearch(
   'E5ACT1VI4D',
@@ -30,11 +30,11 @@ const searchClient = algoliasearch(
 interface HeaderSearchBarProps extends DefaultHeaderSearchBarProps {}
 
 function HeaderSearchBar(props: HeaderSearchBarProps) {
-  const { status, togglePlayPause } = React.useContext(SearchContext)
+  //const { status, togglePlayPause } = React.useContext(SearchContext)
   const [focus, setFocus ] = React.useState(false)
   const componentRef = React.useRef<any>(null);
   const node = React.useRef<any>();
-  console.log(status)
+
   React.useEffect(() => {
     
     function handleClick(e:  MouseEvent): void{
@@ -53,6 +53,7 @@ function HeaderSearchBar(props: HeaderSearchBarProps) {
       //document.removeEventListener("mousedown", handleClick);
     };
   });
+  /*
   function Tt({ hits, currentRefinement, refine }:any){
     if(currentRefinement !== ''){
       return (
@@ -65,9 +66,9 @@ function HeaderSearchBar(props: HeaderSearchBarProps) {
     else{
         return null
     }
-  }
+  }*/
 
-  const CustomAutocomplete = connectAutoComplete(Tt);
+  //const CustomAutocomplete = connectAutoComplete(Tt);
   const SearchBox = ({ currentRefinement, isSearchStalled, refine }:any) => (
     <PlasmicHeaderSearchBar
     
@@ -75,7 +76,7 @@ function HeaderSearchBar(props: HeaderSearchBarProps) {
   );
   const CustomSearchBox = connectSearchBox(SearchBox);
 
-  return <InstantSearch searchClient={searchClient} indexName="brands_beats"><CustomSearchBox/><CustomAutocomplete/></InstantSearch>;
+  return <InstantSearch searchClient={searchClient} indexName="brands_beats"><CustomSearchBox/></InstantSearch>;
 }
 
 export default HeaderSearchBar;
