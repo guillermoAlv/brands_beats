@@ -5,14 +5,14 @@ import {
   PlasmicHeaderSearchBar,
   DefaultHeaderSearchBarProps
 } from "./plasmic/brands_beats/PlasmicHeaderSearchBar";
-import algoliasearch from 'algoliasearch';
-import {InstantSearch, connectSearchBox} from 'react-instantsearch-dom';
+//import algoliasearch from 'algoliasearch';
+//import {InstantSearch, connectSearchBox} from 'react-instantsearch-dom';
 //import SearchContext from './SearchContext'
-
+/*
 const searchClient = algoliasearch(
   'E5ACT1VI4D',
   '58c5723bb97942db9b754bf244b1da75'
-);
+);*/
 
 // Your component props start with props for variants and slots you defined
 // in Plasmic, but you can add more here, like event handlers that you can
@@ -69,14 +69,15 @@ function HeaderSearchBar(props: HeaderSearchBarProps) {
   }*/
 
   //const CustomAutocomplete = connectAutoComplete(Tt);
+  /*
   const SearchBox = ({ currentRefinement, isSearchStalled, refine }:any) => (
     <PlasmicHeaderSearchBar
     
     />
   );
   const CustomSearchBox = connectSearchBox(SearchBox);
-
-  return <InstantSearch searchClient={searchClient} indexName="brands_beats"><CustomSearchBox/></InstantSearch>;
+    */
+  return <PlasmicHeaderSearchBar/>
 }
 
 export default HeaderSearchBar;
