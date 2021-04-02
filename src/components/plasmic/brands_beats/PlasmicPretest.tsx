@@ -40,24 +40,25 @@ type VariantPropType = keyof PlasmicPretest__VariantsArgs;
 export const PlasmicPretest__VariantProps = new Array<VariantPropType>();
 
 export type PlasmicPretest__ArgsType = {
-  children?: React.ReactNode;
-  slot?: React.ReactNode;
+  brandName?: React.ReactNode;
+  brandImage?: React.ReactNode;
 };
 
 type ArgPropType = keyof PlasmicPretest__ArgsType;
 export const PlasmicPretest__ArgProps = new Array<ArgPropType>(
-  "children",
-  "slot"
+  "brandName",
+  "brandImage"
 );
 
 export type PlasmicPretest__OverridesType = {
   root?: p.Flex<"div">;
+  box?: p.Flex<"div">;
   img?: p.Flex<"img">;
 };
 
 export interface DefaultPretestProps {
-  children?: React.ReactNode;
-  slot?: React.ReactNode;
+  brandName?: React.ReactNode;
+  brandImage?: React.ReactNode;
   className?: string;
 }
 
@@ -77,29 +78,36 @@ function PlasmicPretest__RenderFunc(props: {
       data-plasmic-for-node={forNode}
       className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
     >
-      <p.PlasmicSlot
-        defaultContents={
-          <img
-            data-plasmic-name={"img"}
-            data-plasmic-override={overrides.img}
-            alt={""}
-            className={classNames(defaultcss.img, sty.img)}
-            role={"img"}
-          />
-        }
-        value={args.slot}
-      />
+      <div
+        data-plasmic-name={"box"}
+        data-plasmic-override={overrides.box}
+        className={classNames(defaultcss.all, sty.box)}
+      >
+        <p.PlasmicSlot
+          defaultContents={
+            <img
+              data-plasmic-name={"img"}
+              data-plasmic-override={overrides.img}
+              alt={""}
+              className={classNames(defaultcss.img, sty.img)}
+              role={"img"}
+            />
+          }
+          value={args.brandImage}
+        />
 
-      <p.PlasmicSlot
-        defaultContents={"Enter some text"}
-        value={args.children}
-      />
+        <p.PlasmicSlot
+          defaultContents={"Enter some text"}
+          value={args.brandName}
+        />
+      </div>
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img"],
+  root: ["root", "box", "img"],
+  box: ["box", "img"],
   img: ["img"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -108,6 +116,7 @@ type DescendantsType<
 > = typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  box: "div";
   img: "img";
 };
 
@@ -166,6 +175,7 @@ export const PlasmicPretest = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    box: makeNodeComponent("box"),
     img: makeNodeComponent("img"),
 
     // Metadata about props expected for PlasmicPretest

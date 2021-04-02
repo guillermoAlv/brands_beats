@@ -48,7 +48,7 @@ function HeaderSearchBar(props: HeaderSearchBarProps) {
     document.addEventListener("mousedown", handleClick);
     // return function to be called when unmounted
     return () => {
-      document.removeEventListener("mousedown", handleClick);
+      //document.removeEventListener("mousedown", handleClick);
     };
   });
   function Tt({ hits, currentRefinement, refine }:any){

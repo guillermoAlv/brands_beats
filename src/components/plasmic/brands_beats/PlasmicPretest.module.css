@@ -1,9 +1,16 @@
 .root {
   display: flex;
-  flex-direction: column;
   position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.box {
+  display: flex;
+  flex-direction: column;
   width: 260px;
   height: 199px;
+  flex-shrink: 0;
 }
 .img {
   position: relative;

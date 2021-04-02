@@ -20,7 +20,7 @@ function Hit(props: any) {
   //var cat = ""
   console.log(props['hit'])
 
-  return <Pretest children={props['hit']['name']} slot={<img src={props['hit']['url_site_image']} alt="Girl in a jacket"></img>}></Pretest>
+  return <Pretest brandName={props['hit']['name']} brandImage={<img src={props['hit']['url_site_image']} alt="Girl in a jacket"></img>}></Pretest>
 }
 
 // Your component props start with props for variants and slots you defined

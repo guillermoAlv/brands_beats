@@ -440,19 +440,6 @@
           "componentType": "page"
         },
         {
-          "id": "WLA_nd03-v",
-          "name": "Dd",
-          "type": "managed",
-          "projectId": "tDcLAAzBYxMBQFp3GHSHfW",
-          "renderModuleFilePath": "plasmic/brands_beats/PlasmicDd.tsx",
-          "importSpec": {
-            "modulePath": "Dd.tsx"
-          },
-          "cssFilePath": "plasmic/brands_beats/PlasmicDd.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "xRmXX9TFfa",
           "name": "ContentSubscribe",
           "type": "managed",
@@ -475,19 +462,6 @@
             "modulePath": "ContentAboutus.tsx"
           },
           "cssFilePath": "plasmic/brands_beats/PlasmicContentAboutus.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "RmR6Z9n4oC",
-          "name": "Tectcomp",
-          "type": "managed",
-          "projectId": "tDcLAAzBYxMBQFp3GHSHfW",
-          "renderModuleFilePath": "plasmic/brands_beats/PlasmicTectcomp.tsx",
-          "importSpec": {
-            "modulePath": "Tectcomp.tsx"
-          },
-          "cssFilePath": "plasmic/brands_beats/PlasmicTectcomp.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
