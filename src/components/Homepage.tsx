@@ -43,7 +43,6 @@ function Homepage(props: HomepageProps) {
   //const { status, togglePlayPause } = React.useContext(SearchContext)
   const [status, setStatus] = React.useState('zapa');
   const togglePlayPause = (a: string) => setStatus(a);
-  console.log("Hi from HomePage")
   // Use PlasmicHomepage to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You

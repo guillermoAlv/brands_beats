@@ -36,6 +36,7 @@ function HeaderSearchBar(props: HeaderSearchBarProps) {
   const node = React.useRef<any>();
   console.log(status)
   React.useEffect(() => {
+    
     function handleClick(e:  MouseEvent): void{
       if (componentRef.current){
       if (node.current.contains(e.target) || componentRef.current.contains(e.target)) {
@@ -44,8 +45,9 @@ function HeaderSearchBar(props: HeaderSearchBarProps) {
       setFocus(!focus)
     }
     };
+    console.log(handleClick)
     // add when mounted
-    document.addEventListener("mousedown", handleClick);
+    //document.addEventListener("mousedown", handleClick);
     // return function to be called when unmounted
     return () => {
       //document.removeEventListener("mousedown", handleClick);
