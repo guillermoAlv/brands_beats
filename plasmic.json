@@ -477,6 +477,19 @@
           "cssFilePath": "plasmic/brands_beats/PlasmicPretest.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "DheiKRFVbk",
+          "name": "Testinput",
+          "type": "managed",
+          "projectId": "tDcLAAzBYxMBQFp3GHSHfW",
+          "renderModuleFilePath": "plasmic/brands_beats/PlasmicTestinput.tsx",
+          "importSpec": {
+            "modulePath": "Testinput.tsx"
+          },
+          "cssFilePath": "plasmic/brands_beats/PlasmicTestinput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

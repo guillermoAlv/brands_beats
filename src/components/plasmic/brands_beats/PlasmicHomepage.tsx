@@ -32,6 +32,7 @@ import HeaderSearchBar from "../../HeaderSearchBar"; // plasmic-import: RynG-Hop
 import HeaderButton from "../../HeaderButton"; // plasmic-import: QjUfVEq5Go/component
 import HeaderMenuButton from "../../HeaderMenuButton"; // plasmic-import: kpJaxtJ4t1/component
 import Footer from "../../Footer"; // plasmic-import: rMsFEqx2mQ/component
+import Testinput from "../../Testinput"; // plasmic-import: DheiKRFVbk/component
 
 import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 5Lc4h9nwB5Z/globalVariant
 
@@ -69,6 +70,7 @@ export type PlasmicHomepage__OverridesType = {
   headerMenuButton?: p.Flex<typeof HeaderMenuButton>;
   hero?: p.Flex<"div">;
   searchResults?: p.Flex<"div">;
+  testinput?: p.Flex<typeof Testinput>;
 };
 
 export interface DefaultHomepageProps {
@@ -305,6 +307,12 @@ function PlasmicHomepage__RenderFunc(props: {
               />
             </footer>
           </div>
+
+          <Testinput
+            data-plasmic-name={"testinput"}
+            data-plasmic-override={overrides.testinput}
+            className={classNames("__wab_instance", sty.testinput)}
+          />
         </div>
       </div>
     </React.Fragment>
@@ -321,7 +329,8 @@ const PlasmicDescendants = {
     "headerButtonAreaMobile",
     "headerMenuButton",
     "hero",
-    "searchResults"
+    "searchResults",
+    "testinput"
   ],
   header: [
     "header",
@@ -337,7 +346,8 @@ const PlasmicDescendants = {
   headerButtonAreaMobile: ["headerButtonAreaMobile", "headerMenuButton"],
   headerMenuButton: ["headerMenuButton"],
   hero: ["hero"],
-  searchResults: ["searchResults"]
+  searchResults: ["searchResults"],
+  testinput: ["testinput"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<
@@ -353,6 +363,7 @@ type NodeDefaultElementType = {
   headerMenuButton: typeof HeaderMenuButton;
   hero: "div";
   searchResults: "div";
+  testinput: typeof Testinput;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -418,6 +429,7 @@ export const PlasmicHomepage = Object.assign(
     headerMenuButton: makeNodeComponent("headerMenuButton"),
     hero: makeNodeComponent("hero"),
     searchResults: makeNodeComponent("searchResults"),
+    testinput: makeNodeComponent("testinput"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
